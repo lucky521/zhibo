@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+</head>
+<body>
+<h1> hls index</h1>
+<p>I am at /usr/local/nginx.</p>
+
+
+<video  height="300" width="300" controls>
+    <source src="http://172.16.33.133:8080/hls/mystream.m3u8"/>
+    <p class="warning">Your browser does not support HTML5 video.</p>
+</video>
+
+<p><em>Thank you for using nginx.</em></p>
+
+<div id="player"></div>
+<script>
+var player = new Clappr.Player({
+	source: "http://172.16.33.133:8080/hls/mystream.m3u8",
+	parentId: "#player",
+	height: 300,
+	width: 500
+
+});
+</script>
+
+</body>
+</html>
