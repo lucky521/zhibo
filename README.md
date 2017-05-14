@@ -1,6 +1,11 @@
 # zhibo 直播
 Real Time Stream Practice
 
+## Architecture
+
+Stream Flow:  Anchor client --> RTMP Server  --> Audience Client
+
+
 ## RTMP
 nginx-rtmp-module helps to build a RTMP service on [Nginx](./nginx/nginx.conf).
 
