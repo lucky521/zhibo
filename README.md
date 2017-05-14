@@ -2,7 +2,7 @@
 Real Time Stream Practice
 
 ## RTMP
-nginx-rtmp-module help to build a RTMP service.
+nginx-rtmp-module helps to build a RTMP service on [Nginx](./nginx/nginx.conf).
 
 ## HLS 
 Here I use HLS Web Player Clappr to play HLS steam in web brower.
